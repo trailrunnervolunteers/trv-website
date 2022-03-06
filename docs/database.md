@@ -34,6 +34,12 @@ erDiagram
         string email
         bool leader
     }
+    pictures {
+        int event_id
+        int picture_id
+        string description
+        string location
+    }
 ```
 
 ## Migrations
