@@ -14,12 +14,12 @@ erDiagram
         string description
         timestamp start
         timestamp end
-        string land_manager "JCOS, CT, Lakewood, etc"
+        enum land_manager
         string park
         array trails
         bool public
-        string type "Light Maintenance, Project, Cleanup, etc"
-        array groups "TRV by default"
+        enum type
+        enum groups
     }
     participants {
         int event_id FK
