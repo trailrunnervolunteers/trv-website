@@ -8,7 +8,6 @@ TRV uses Heroku Postgres
 erDiagram
     events ||--|{ participants: contains
     volunteers ||--|| participants: are
-    groups }|--|{ events: attend
 
     events {
         int event_id PK
@@ -34,10 +33,6 @@ erDiagram
         string last_name
         string email
         bool leader
-    }
-    groups {
-        int group_id PK
-        string name
     }
 ```
 
