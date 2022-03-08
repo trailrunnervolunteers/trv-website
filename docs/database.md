@@ -19,7 +19,8 @@ erDiagram
         array trails
         bool public
         enum type
-        enum groups
+        array groups
+        bool closed
     }
     participants {
         int event_id FK
@@ -38,6 +39,10 @@ erDiagram
         int picture_id
         string description
         string location
+    }
+    groups {
+        int group_id PK
+        string name
     }
 ```
 
