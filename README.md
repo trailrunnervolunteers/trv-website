@@ -82,6 +82,14 @@ the output of the freeze to `requirements.txt` which now has _everything_ we nee
 $ pip freeze > requirements.txt
 ```
 
+**NOTE**: After you write the frozen requirements txt, make sure a line like
+the following doesn't end up in it. If it does, remove it:
+
+`-e git+ssh://git@github.com/briancurtin/trv-website.git@37088cbc6e03b40477b970634586faafe0540684#egg=trv`
+
+_TODO_: Perhaps make a `tox` target that sets up a temporary virtualenv like
+Brian's project does at work.
+
 ## Development Requirements
 
 The `dev-requirements.txt` file is installed like

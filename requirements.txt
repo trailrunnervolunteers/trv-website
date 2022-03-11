@@ -26,6 +26,5 @@ six==1.16.0
 toml==0.10.2
 tomli==2.0.1
 tox==3.24.5
--e git+ssh://git@github.com/briancurtin/trv-website.git@37088cbc6e03b40477b970634586faafe0540684#egg=trv
 virtualenv==20.13.3
 Werkzeug==2.0.3
