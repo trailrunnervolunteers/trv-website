@@ -4,7 +4,7 @@ branch = true
 source = ["trv"]
 
 [tool.coverage.paths]
-source = ["src/trv", ".tox/*/site-packages/trv"]
+source = ["src", ".tox/*/site-packages"]
 
 [tool.coverage.report]
 show_missing = true
