@@ -13,6 +13,12 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+# From structlog's action
+env:
+  FORCE_COLOR: "1"  # Make tools pretty.
+  TOX_TESTENV_PASSENV: FORCE_COLOR
+  PYTHON_LATEST: "3.10"
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   tests:
@@ -22,6 +28,7 @@ jobs:
       USING_COVERAGE: '3.10'
 
     strategy:
+      fail-fast: false
       matrix:
         python-version: ["3.10"]
 
@@ -70,9 +77,9 @@ jobs:
 
       - name: Combine coverage & fail if it's <100%.
         run: |
-          python -m coverage combine
-          python -m coverage html --skip-covered --skip-empty
-          python -m coverage report --fail-under=100
+          python3 -m coverage combine
+          python3 -m coverage html --skip-covered --skip-empty
+          python3 -m coverage report --fail-under=100
       - name: Upload HTML report if check failed.
         uses: actions/upload-artifact@v2
         with:
