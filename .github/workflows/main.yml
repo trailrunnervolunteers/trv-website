@@ -40,7 +40,6 @@ jobs:
       - name: "Run tox targets for 3.10"
         run: "python3 -m tox"
 
-
       - name: Upload coverage data
         uses: actions/upload-artifact@v2
         with:
