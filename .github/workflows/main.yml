@@ -37,6 +37,7 @@ jobs:
       - uses: "actions/setup-python@v2"
         with:
           python-version: "3.10"
+
       - name: "Install dependencies"
         run: |
           python3 -VV
@@ -44,14 +45,13 @@ jobs:
           python3 -m pip install --upgrade pip setuptools wheel
           python3 -m pip install --upgrade coverage[toml] virtualenv tox tox-gh-actions
 
-      - name: "Run tox targets for 3.10"
-        run: "python3 -m tox"
+      - run: "python3 -m tox"
 
       - name: Upload coverage data
         uses: actions/upload-artifact@v2
         with:
           name: coverage-data
-          path: .coverage.*
+          path: .coverage*
           if-no-files-found: ignore
 
   # This is from https://hynek.me/articles/ditch-codecov-python/
@@ -77,7 +77,6 @@ jobs:
 
       - name: Combine coverage & fail if it's <100%.
         run: |
-          python3 -m coverage combine
           python3 -m coverage html --skip-covered --skip-empty
           python3 -m coverage report --fail-under=100
       - name: Upload HTML report if check failed.
