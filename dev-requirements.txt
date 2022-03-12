@@ -3,4 +3,4 @@ pre-commit
 black
 pytest
 tox
-coverage
+coverage[toml]
