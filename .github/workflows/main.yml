@@ -80,7 +80,7 @@ jobs:
           python -m coverage combine
           python3 -m coverage html --skip-covered --skip-empty
           python3 -m coverage report --fail-under=100
-      - name: Upload HTML report if check failed.
+      - name: Upload HTML report if coverage <100%
         uses: actions/upload-artifact@v2
         with:
           name: html-report
