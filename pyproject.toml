@@ -3,9 +3,16 @@ requires = ["setuptools>=40.6.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.coverage.run]
+# This is set to true even though we're only running one configuration
+# and it's not _really_ parallel. We're doing this because we want
+# the `coverage combine` to use the `paths.source` mapping below
+# to turn the coverage report from showing the installed tox path
+# as the file for what's being represented, to what's actually under
+# the source path.
 parallel = true
 branch = true
 source = ["trv"]
+dynamic_context = "test_function"
 
 [tool.coverage.paths]
 source = ["src", ".tox/*/site-packages"]
