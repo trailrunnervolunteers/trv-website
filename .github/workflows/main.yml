@@ -38,7 +38,7 @@ jobs:
         with:
           python-version: "3.10"
 
-      - name: "Install dependencies"
+      - name: Install dependencies
         run: |
           python3 -VV
           python3 -m site
@@ -58,7 +58,7 @@ jobs:
   # and https://github.com/hynek/structlog/blob/main/.github/workflows/main.yml
   # Hynek is always right
   coverage:
-    name: Combine & check coverage.
+    name: Coverage Check
     runs-on: ubuntu-latest
     needs: tests
 
@@ -75,7 +75,7 @@ jobs:
         with:
           name: coverage-data
 
-      - name: Combine coverage & fail if it's <100%.
+      - name: Combine coverage & fail if it's <100%
         run: |
           python -m coverage combine
           python3 -m coverage html --skip-covered --skip-empty
