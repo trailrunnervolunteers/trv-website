@@ -23,6 +23,7 @@ erDiagram
         bool closed
     }
     participants {
+        int participant_id PK
         int event_id FK
         int volunteer_id FK
         bool attended

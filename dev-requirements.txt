@@ -1,0 +1,6 @@
+# These are requirements not for running the TRV app, but for working with it
+pre-commit
+black
+pytest
+tox
+coverage[toml]
