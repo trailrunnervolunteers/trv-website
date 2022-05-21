@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Trail Runner Volunteers">
+    <title>Trail Runner Volunteers</title>
+
+    <link rel="canonical" href="https://trailrunnervolunteers.com">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='assets/images/trv.png') }}">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='assets/css/site.css') }}" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LMBQ2WS2BQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-LMBQ2WS2BQ');
+    </script>
+
+  </head>
+  <body>
+
+<main>
+  <div class="container-sm">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <span class="fs-4">Trail Runner Volunteers</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#calendar" class="nav-link">Calendar</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Contact</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item">
+              <a href="https://instagram.com/trailrunnervolunteers" target="_blank" class="nav-link p-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                </svg>
+                @trailrunnervolunteers
+              </a>
+            </li>
+            <li class="dropdown-item">
+              <a href="https://www.facebook.com/groups/670515013366239" target="_blank" class="nav-link p-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                </svg>
+                Trail Runner Volunteers
+              </a>
+            </li>
+            <li class="dropdown-item">
+              <a href="mailto:trailrunnervolunteers@gmail.com" target="_blank" class="nav-link p-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                </svg>
+                Email
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+  </div>
+
+  <div class="px-4 py-4 my-4 text-center border-bottom">
+    <img class="d-block mx-auto mb-4" src="{{ url_for('static', filename='assets/images/trv.png') }}" alt="TRV logo" width="300">
+    <h1 class="display-5 fw-bold">About Us</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead">
+        We love trails and want them to be better for everyone!
+      </p>
+      <p>
+        We're a group of runners who use our local trails and want to give back to make them better for all users.
+        For as much as we may run, we're also hikers and bikers and welcome contributors of all types to work with us
+        in conjunction with <a href="https://www.jeffco.us/open-space">Jeffco Open Space</a> to improve everyone's
+        experience on our trail systems.
+      </p>
+    </div>
+  </div>
+
+  <div class="container col-xxl-8 px-4 py-4 border-bottom" id="calendar">
+    <div class="row flex-lg-row align-items-center g-5 py-4">
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Events</h1>
+        <p class="lead">We try to host events that work for people.</p>
+        <p>
+          Sometimes it's weekday evenings in the summer, sometimes it's weekends in the fall.
+          Where we work depends on project need, leadership availability, and of course you, the volunteer!
+        </p>
+        <p>
+          JeffCo Open Space events require signup on their <a href="https://offero.jeffco.us/Calendar">Offero</a> platform.
+        </p>
+        <p>
+          Are you with a group that wants our help to run an event? <a href="#contact">Contact us!</a>
+        </p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a href="https://calendar.google.com/calendar/embed?src=b5grqjdeneoor1ej5ldqak8eic%40group.calendar.google.com&ctz=America%2FDenver" target="_blank">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Full Calendar</button>
+          </a>
+        </div>
+      </div>
+      <div class="col-10 col-sm-8 col-lg-6">
+        <iframe src="https://calendar.google.com/calendar/embed?height=300&wkst=1&bgcolor=%23ffffff&ctz=America%2FDenver&src=YjVncnFqZGVuZW9vcjFlajVsZHFhazhlaWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23009688&mode=AGENDA&showPrint=0&showTabs=0&showCalendars=0&showTitle=0" style="border-width:0" width="325" height="300" frameborder="0" scrolling="no"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="px-4 py-4 my-4 text-center border-bottom">
+    <h1 class="display-4 fw-bold">Trail Maintenance</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">
+        Just like the roads we drive on, the trails we run, hike, and ride require maintenance.
+      </p>
+      <p>
+        We get together to work on anywhere from light maintenance—upkeep of existing trail features such as drainage,
+        seen below—to trail construction projects that involve new trails, building rock walls, and more!
+        We use tools like a McCleods, pick mattocks, rock bars, and shovels to shape trails in functional, sustainable,
+        and enjoyable ways.
+      </p>
+      <!-- <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Example Projects</button>
+      </div> -->
+    </div>
+    <div class="container px-5">
+      <img src="{{ url_for('static', filename='assets/images/trailwork001.jpeg') }}" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Drainage work at Mt. Falcon" width="700" height="500" loading="lazy">
+    </div>
+  </div>
+
+  <div class="container col-xxl-8 px-4 py-4 border-bottom">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-4">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="{{ url_for('static', filename='assets/images/cleanup001.jpeg') }}" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Cleaning up trash" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Cleanups</h1>
+        <p class="lead">
+          Keeping our open spaces clean is as much a part of trail work as digging in the dirt with tools.
+        </p>
+        <p>
+          Jeffco Open Spaces have seen a sharp rise in usage over the last few years, and with that
+          rise comes more trash. Not everyone abides by the Leave No Trace principles, including "displose of waste properly,"
+          so we try to help out when we can.
+        </p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a href="https://lnt.org/why/7-principles/" target="_blank"><button type="button" class="btn btn-outline-primary btn-lg px-4 me-md-2">The 7 Principles</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="container col-xxl-8 px-4 py-4 border-bottom">
+    <div class="row flex-lg-row align-items-center g-5 py-4">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="{{ url_for('static', filename='assets/images/AidStation002.jpg') }}" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Aid Station Crew" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Aid Stations</h1>
+        <p class="lead">
+          When we aren't out working the trails, we're cheering on our community.
+        </p>
+        <p>
+        TRV volunteers love getting our hands dirty, but that's not all we do.  We about helping runners all the time, including race day!  We're currently working on next year's aid station
+          schedule, so if you're a race director or volunteer coordinator in need of some extra helping hands, send us an email and we'll figure out how to best help!
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="container col-xl-10 col-xxl-8 px-4 py-4">
+    <div class="row flex-lg-row-reverse align-items-center g-lg-5 py-5">
+      <div class="col-lg-7 text-center text-lg-start">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Join our mailing list!</h1>
+        <p class="lead">Keep up with what we're doing, where we're doing it, and find out about upcoming projects and events.</p>
+      </div>
+      <div class="col-md-10 mx-auto col-lg-5">
+        <form class="p-4 p-md-5 border rounded-3 bg-light">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+          <hr class="my-4">
+          <small class="text-muted">We won't sell your data or email you too often.</small>
+        </form>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="container col-xxl-8 px-4 py-4 border-bottom" id="contact">
+    <div class="row flex-lg-row align-items-center g-5 py-4">
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Contact Us</h1>
+        <p class="lead">
+          Questions or suggestions? We're open!
+        </p>
+      </div>
+
+      <div class="col-4">
+        <ul class="nav flex-column">
+          <li class="nav-item my-2">
+            <a href="https://instagram.com/trailrunnervolunteers" target="_blank" class="nav-link p-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+              </svg>
+              @trailrunnervolunteers
+            </a>
+          </li>
+          <li class="nav-item my-2">
+            <a href="https://www.facebook.com/groups/670515013366239" target="_blank" class="nav-link p-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+              </svg>
+              Trail Runner Volunteers
+            </a>
+          </li>
+          <li class="nav-item my-2">
+            <a href="mailto:trailrunnervolunteers@gmail.com" target="_blank" class="nav-link p-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+              </svg>
+              Email
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+  </body>
+</html>
