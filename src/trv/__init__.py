@@ -2,7 +2,7 @@ import os
 
 from flask import Flask
 
-from trv import api
+from trv import api, routes
 
 
 def create_app():
@@ -20,5 +20,6 @@ def create_app():
         pass
 
     app.register_blueprint(api.bp)
+    app.register_blueprint(routes.bp)
 
     return app
